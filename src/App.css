@@ -104,3 +104,28 @@ body {
   text-decoration: line-through;
   color: #ffffff7d;
 }
+
+.pass-con {
+  height: 100vh;
+  width: 100vw;
+  z-index: 111;
+  position: fixed;
+  background: green;
+  display: grid;
+  place-items: center;
+}
+
+.pass-pop {
+  margin-bottom: 1.5em;
+
+  input {
+    margin-top: 0.2em;
+    outline: none;
+    border: none;
+    padding: 0.5em;
+  }
+}
+.wrong{
+  font-size: small;
+  color: rgb(137, 0, 0);
+}
