@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: #072204;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5em;
+  padding: 0.5em;
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15.8px);
+  -webkit-backdrop-filter: blur(15.8px);
+}
+
+.names {
+  width: 100%;
+  padding: 0.7em;
+  display: grid;
+  place-items: center;
+  outline: 1px solid white;
+  color: white;
+  font-size: large;
+  font-weight: 450;
+  border-radius: 3px;
+}
+
+.user {
+  background: green;
+  outline: green;
+}
+
+.task-container {
+  padding: 1em;
+  padding-bottom: 0.5em;
+  color: #ffffff;
+}
+
+.task {
+  padding: 1.5em 0;
+  border-bottom: 1px dashed green;
+  text-align: center;
+}
+
+.task:last-child {
+  border: none;
+}
+
+.add {
+  display: grid;
+  place-items: center;
+  margin-bottom: 1em;
+
+  p {
+    padding: 0.4em 1.5em;
+    background: #ffffff;
+    border-radius: 3px;
+  }
+}
+
+.task-input-container {
+  width: 100%;
+  padding: 0.2em;
+  background: #ffffff;
+  position: fixed;
+  bottom: 0;
+
+  textarea {
+    width: 100%;
+    resize: none;
+    outline: none;
+    padding: 0.5em;
+  }
+}
+
+.done {
+  font-size: x-large;
+  position: absolute;
+  z-index: 100;
+  bottom: 0.5em;
+  right: 0.3em;
+}
+
+.strike {
+  text-decoration: line-through;
+  color: #ffffff7d;
+}
